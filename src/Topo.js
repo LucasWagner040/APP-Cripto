@@ -1,50 +1,39 @@
-//IMPORTAR MODULO
-import React from 'react';
+import React from 'react'
 
-//class
+import './Principal.css'
 
 export default class Topo extends React.Component{
-  render(){
-    return(
+    render(){
+        return(
+            <div>
+                <header className='topo'>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/Principal">Menu</a>
+                                </li>
 
-      <nav className="navbar navbar-b navbar-trans navbar-expand-md fixed-top">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">CRIPSTONKS</a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Criptomoedas
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a className="dropdown-item" href="#" class="smoothscroll">Bitcoin</a></li>
-                <li><a className="dropdown-item" href="#" class="smoothscroll">Litecoin</a></li>
-                <li><a className="dropdown-item" href="#" class="smoothscroll">Ripple XRP</a></li>
-                <li><a className="dropdown-item" href="#" class="smoothscroll">Ethereum</a></li>
-                <li><a className="dropdown-item" href="#" class="smoothscroll">Chiliz</a></li>
-                <li><a className="dropdown-item" href="#" class="smoothscroll">Tether</a></li>
-                <li><hr className="dropdown-divider"/></li>
-                <li><a className="dropdown-item" href="#" class="smoothscroll">Onde comprar criptomoedas</a></li>
-              </ul>
-            </li>
-
-          </ul>
-
-        </div>
-      </div>
-    </nav>
-     
-    )
-  }
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        CriptoMoedas
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="/bitcoin">Bitcoin</a>
+                                        <a class="dropdown-item" href="/litecoin">Litecoin</a>
+                                        <a class="dropdown-item" href="/etheriun">Etheriun</a>
+                                        <a class="dropdown-item" href="/ripple">Ripple </a>
+                                        <a class="dropdown-item" href="/bitcoinCash">Bitcoin Cash</a>
+                                        <a class="dropdown-item" href="/dolar">Dolar</a>
+                                        <a class="dropdown-item" href="/chiliz">Chiliz </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        )
+    }
 }
-
-
